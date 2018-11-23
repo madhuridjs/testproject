@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+#fb{
+	margin-top:40px;
+}
+
+#login{
+	width: 450px;
+	border: 1px solid blue;
+	float: left;
+	margin: 50px 10px 20px 10px;
+	padding: 30px 20px 20px 20px;
+	border-radius: 15px;
+	box-shadow:5px 5px 5px 5px blue;
+}
+#form{
+	margin-left: 450px;
+}

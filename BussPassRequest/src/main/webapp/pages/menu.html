@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bus booking system</title>
+<style>
+
+body {
+	font-family: sans-serif;
+	background-color: #e0f2f1;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	width: 200px;
+	height: 100px;
+	background-color: none;
+	width: 200px;
+	height: 60px;
+	background-color: #e0e0e0;
+	color: white;
+}
+
+li {
+	list-style-type: none;
+	width: 190px;
+	height: 50px;
+	background-color: #b2dfdb;
+	text-align: center;
+	line-height: 52px;
+	border-radius: 15px;
+}
+
+#sas {
+	display: flex;
+	flex-direction: column;
+}
+
+.anchor {
+	background-color: #e0e0e0;
+	border: none;
+	width: 200px;
+	height: 60px;
+	padding: 10px;
+}
+
+#container {
+	height: 160px;
+	width: 100px;
+	background-color: ;
+	float: left;
+	flex-direction: column;
+}
+
+#container1 {
+	height: 370px;
+	width: 775px;
+	background-color: #b2dfdb;
+	float: left;
+	margin-left: 190px;
+	border: none;
+}
+
+.children {
+	height: 30px;
+	width: 180px;
+}
+
+</style>
+</head>
+<body>
+	<form name="f1" action="LoginServlet" method="post" onsubmit="return validate()">
+
+		<h1 align="center">Online Bus Booking</h1>
+		<hr>
+
+		<div style="margin-left: 100px; margin-top: -30px;">
+
+			<div style="height: 100px; width: 100px;"></div>
+
+			<div id="container">
+				<ul>
+					<a href="../Pending" target="myiframe"><li>Pending</li></a>
+					<a href="addroute.html" target="myiframe"><li>Add Route Details</li></a>
+					<a href="../ListAllRoutes"target="myiframe"><li>View Routes</li></a>
+					<a href="monthlyreport.html"target="myiframe"><li>Monthly Report</li></a>
+					<a href="../index.html"><li>Logout</li></a>					
+				</ul>
+			</div>
+
+			<iframe name="myiframe" id="container1"></iframe>
+
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+create database busdb;
+
+use busdb;
+
+create table adminlogin(userid int primary key auto_increment, username varchar(100) not null, userpassword varchar(100) not null);
+
+insert into adminlogin(username, userpassword) values("tom","tom123");
+insert into adminlogin(username, userpassword) values("jerry","jerry123");
+insert into adminlogin(username, userpassword) values("spike","spike123");
+
+create table route_table(route_id int(11) primary key auto_increment,
+ route_path varchar(255) not null,
+ no_of_seats int,
+ total_seats int,
+ bus_no varchar(10),
+ driver_name varchar(25),
+ total_km int(11));
+
+insert into route_table(route_path,no_of_seats,total_seats,bus_no,driver_name,total_km)values('Chennai - MIPL,SP Kovil,Mariamali Nagar,Urapakkam,Vandalur,Perungatlur,Gudvancheri,Tambaram',
+25,40,'TN-3465','Ameer',48);
+
+insert into route_table(route_path,no_of_seats,total_seats,bus_no,driver_name,total_km)values('Chennai - MIPL,Tambaram,Chromepet,Pallavaram,Mambalam',
+30,50,'TN-0934','Antony',65);
+
+insert into route_table(route_path,no_of_seats,total_seats,bus_no,driver_name,total_km)values('Chennai - MIPL,Tambaram,Kiltakattali,Kanchi,Chennai Central',
+12,42,'TN-9742','Amar',80);
+
+
+create table buspassrequest(
+  request_id int primary key auto_increment,
+  EmployeeId varchar(10),
+  firstname varchar(100),
+  lastname varchar(100),
+  gender varchar(10),
+  address varchar(255),
+ email varchar(40),
+  dateofjoin date,
+  location varchar(50),
+  pickuploc varchar(100),
+  pickuptime time,
+status varchar(10),
+designation varchar(20) );
+
+
+create table transaction( transaction_id int primary key auto_increment,employeeId varchar(10),transaction_date date ,calculated_km  int(20) ,monthly_fare int(20) ,route_id int(20),status varchar(10));
+
+

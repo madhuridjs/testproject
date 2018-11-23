@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+	body {
+		font-family: cursive;
+		color: #757575;
+		font-size: 110%;
+	}
+	
+	#button1 {
+		background-color: #4db6ac;
+		height: 40px;
+		width: 100px;
+		border: none;
+		border-radius: 3px;
+		position: absolute;
+		margin-top: 10px;
+		margin-left: 33px;
+		color: white;
+	}
+	
+	input {
+		background-color: #b2dfdb;
+		border: none;
+		height: 25px;
+		width: 250px;
+	}
+	
+	table {
+		margin-left: 90px;
+	}
+	
+</style>
+</head>
+<body>
+<!-- route_path , routename,occupiedseats,total_seats,bus_no,driver_name,total_km -->
+	<div style="padding-top: 10px; background-color: #e0f2f1; padding-bottom: 25px; width: 859px; height: 319px;">
+		<h3 style="text-align: center;">Add Bus Details</h3>
+		<form action="../AddNewRoute" method="post">
+			<table style="width: 100%">
+			
+				<tr>
+					<th>Route Path:</th>
+					<td><input name="routepath" type="text" ></td>
+				</tr>
+			
+				<tr>
+					<th>Route Name:</th>
+					<td><input type="text" ></td>
+				</tr>
+				
+				<tr>
+					<th>Occupied Seats:</th>
+					<td><input name="occupiedseats" type="text" ></td>
+				</tr>
+				
+				<tr>
+					<th>Total Seats:</th>
+					<td><input name="totalseats" type="text" ></td>
+				</tr>
+				
+				<tr>
+					<th>Bus Number:</th>
+					<td><input name="busno" type="text"></td>
+				</tr>
+				
+				<tr>
+					<th>Driver Name:</th>
+					<td><input name="drivername" type="text" ></td>
+				</tr>
+				
+				<tr>
+					<th>Total Distance:</th>
+					<td><input name="totalkm" type="text" ></td>
+				</tr>
+				
+			</table>
+		
+		<div style="text-align: center;"><input id="button1" type="submit" value="Submit" name="addroute"></div>
+	
+	</form>
+	</div>
+</body>
+</html>
